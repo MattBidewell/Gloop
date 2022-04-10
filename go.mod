@@ -1,3 +1,3 @@
-module github.com/mattbidewell/go-terpreter
+module github.com/mattbidewell/gloop-terpreter
 
 go 1.18

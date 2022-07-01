@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -eu
+
 GOEXEC=$(which go)
 
 cd "$(dirname "$0")"

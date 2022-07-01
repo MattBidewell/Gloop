@@ -8,11 +8,17 @@ This project should be used as a case study and not a implementable language.
 Follow for a journey in creating an interpreter. Updates will be provided below.
 
 ### Testing
-Run `go test ./lexer` to test the lexical analysis interpreter.
+Run `go test /{folder}` to test the individual folder
 
 Heavily inspired by [Thorsten Ball's Writing an Interpreter in Go](https://interpreterbook.com/)
 
 ### Updates
+
+#### 0.0.3
+`01/07/2022`
+- Added a basic parser as a step forward into making this a programming language.
+  - Only parses let statments for the time being.
+  - Is a recursive descent parsre
 
 #### 0.0.2
 `10/04/2022`

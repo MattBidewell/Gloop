@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -eu
 
@@ -18,9 +18,9 @@ for dir in ./*;
 
       for file in $dir/*;
         do (
-          if [ "$file" == *"test"* ];then
+          if grep -q "test" "$file";then
             printf '%s\n' "$file"
-            $GOEXEC test $dir
+            exec $GOEXEC test $dir
             break
           fi
         )

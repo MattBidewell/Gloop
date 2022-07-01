@@ -5,7 +5,8 @@ set -eu
 GOEXEC=$(which go)
 
 cd "$(dirname "$0")"
-
+exec ls
+exec pwd
 for dir in ./*;
   do (
     if [ -d "$dir" ];then

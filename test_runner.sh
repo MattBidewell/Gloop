@@ -18,10 +18,9 @@ for dir in ./*;
 
       for file in $dir/*;
         do (
-          echo $file
           if [ "$file" == *"test"* ];then
             printf '%s\n' "$file"
-            exec $GOEXEC test $dir
+            $GOEXEC test $dir
             break
           fi
         )

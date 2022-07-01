@@ -20,7 +20,7 @@ for dir in ./*;
         do (
           if grep -q "test" "$file";then
             printf '%s\n' "$file"
-            exec $GOEXEC test $dir
+            $GOEXEC test $dir
             break
           fi
         )

@@ -18,7 +18,7 @@ Heavily inspired by [Thorsten Ball's Writing an Interpreter in Go](https://inter
 `01/07/2022`
 - Added a basic parser as a step forward into making this a programming language.
   - Only parses let statments for the time being.
-  - Is a recursive descent parsre
+  - Is a recursive descent parser
 
 #### 0.0.2
 `10/04/2022`

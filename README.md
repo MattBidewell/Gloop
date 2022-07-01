@@ -14,6 +14,9 @@ You can also run `sh ./test_runner.sh` which will explore all folders and run th
 
 Heavily inspired by [Thorsten Ball's Writing an Interpreter in Go](https://interpreterbook.com/)
 
+
+### GH Actions
+Github actions will run on every PR and main push. The actions will run the tests.
 ### Updates
 
 #### 0.0.3

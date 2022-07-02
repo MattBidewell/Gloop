@@ -17,13 +17,16 @@ type Lexer struct {
 	ch 						byte
 }
 
+// New lexers read the first char of the input provided.
 func New(input string) *Lexer {
 	l:= &Lexer{input: input}
 	l.readChar()
 	return l
 }
 
+
 func (l *Lexer) readChar() {
+	// if the end of input
 	if l.readPosition >= len(l.input) {
 		l.ch = 0 // ASCII character for NUL
 	} else {
@@ -39,7 +42,6 @@ func (l *Lexer) NextToken() token.Token {
 	l.skipWhitespace()
 
 	switch l.ch {
-
 		case '=':
 			// is = or ==
 			switch l.peekChar() {
@@ -82,7 +84,6 @@ func (l *Lexer) NextToken() token.Token {
 			tok = newToken(token.SLASH, l.ch)
 		case '*':
 			tok = newToken(token.ASTRIX, l.ch)
-
 		case '<':
 			// < vs <=
 			switch l.peekChar() {
@@ -106,7 +107,6 @@ func (l *Lexer) NextToken() token.Token {
 			default:
 				tok = newToken(token.GT, l.ch)
 		}
-
 		case 0:
 			tok.Literal = ""
 			tok.Type = token.EOF

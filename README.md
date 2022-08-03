@@ -1,11 +1,10 @@
-# gloop-terpreter
+# Gloop programming language
 
-## Interpreter
-Gloop is a experiment in learning how interpreters and compilers work.
+> Do not use in production. Like seriously. I mean you can... but I wouldnt. At least not yet.
 
-This project should be used as a case study and not a implementable language.
+Gloop is a experiment in learning how interpreters, compilers work and ultimately languages work.
 
-Follow for a journey in creating an interpreter. Updates will be provided below.
+This project should be used as a case study and not a implementable language. Follow for a journey in creating an interpreter. Updates will be provided below.
 
 ### Testing
 Run `go test /{folder}` to test the individual folder

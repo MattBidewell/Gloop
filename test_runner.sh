@@ -9,7 +9,6 @@ cd "$(dirname "$0")"
 for dir in ./*;
   do (
     if [ -d "$dir" ];then
-      echo "\n*********"
       echo "checking for tests in $dir"
 
       # urgh dont judge. But slowing it down to make it viewable.
@@ -24,17 +23,12 @@ for dir in ./*;
             break
           fi
         )
-      echo "*********"
       done
     fi
   )
 done
 
-echo "\n*********"
 echo "finished"
-echo "*********"
-
-        # cd $dir
         # echo "*********"
         # echo "checking for tests in ${PWD##*/}"
         # echo "*********"

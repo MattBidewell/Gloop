@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/mattbidewell/gloop-terpreter/lexer"
-	"github.com/mattbidewell/gloop-terpreter/token"
+	"github.com/mattbidewell/gloop/lexer"
+	"github.com/mattbidewell/gloop/token"
 )
 
 const PROMPT = ">> "

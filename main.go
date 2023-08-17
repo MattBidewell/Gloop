@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/mattbidewell/gloop-terpreter/repl"
+	"github.com/mattbidewell/gloop/repl"
 )
 
 func main() {

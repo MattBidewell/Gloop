@@ -2,7 +2,7 @@
 
 > Do not use in production. Like seriously. I mean you can... but I wouldnt. At least not yet.
 
-Gloop is a experiment in learning how interpreters, compilers work and ultimately languages work.
+Gloop is a experiment in learning how interpreters, compilers and ultimately languages work.
 
 This project should be used as a case study and not a implementable language. Follow for a journey in creating an interpreter. Updates will be provided below.
 

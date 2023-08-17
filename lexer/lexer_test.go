@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/mattbidewell/gloop-terpreter/token"
+	"github.com/mattbidewell/gloop/token"
 )
 
 func TestNextToken(t *testing.T) {
@@ -28,9 +28,9 @@ func TestNextToken(t *testing.T) {
 	10!=9
 	`
 	tests := []struct {
-		expectedType		token.TokenType
+		expectedType    token.TokenType
 		expectedLiteral string
-	} {
+	}{
 		{token.LET, "let"},
 		{token.IDENT, "a"},
 		{token.ASSIGN, "="},
@@ -102,7 +102,6 @@ func TestNextToken(t *testing.T) {
 		{token.NOT_EQ, "!="},
 		{token.INT, "9"},
 		{token.EOF, ""},
-
 	}
 
 	l := New(input)

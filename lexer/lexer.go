@@ -5,8 +5,7 @@ import (
 )
 
 /*
-*	The lexer performs a lexical analysis on the source
-*
+* The lexer performs a lexical analysis on the source
 * Currently only supports  ASCII characters rather than UTF8
  */
 
@@ -82,7 +81,7 @@ func (l *Lexer) NextToken() token.Token {
 	case '/':
 		tok = newToken(token.SLASH, l.ch)
 	case '*':
-		tok = newToken(token.ASTRIX, l.ch)
+		tok = newToken(token.ASTERISK, l.ch)
 	case '<':
 		// < vs <=
 		switch l.peekChar() {

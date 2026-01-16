@@ -1,9 +1,9 @@
 package ast
 
 import (
-	"github.com/mattbidewell/gloop/token"
-
 	"testing"
+
+	"github.com/mattbidewell/gloop/token"
 )
 
 func TestString(t *testing.T) {

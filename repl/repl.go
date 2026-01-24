@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/mattbidewell/gloop/evaluator"
 	"github.com/mattbidewell/gloop/lexer"
-	"github.com/mattbidewell/gloop/token"
+	"github.com/mattbidewell/gloop/parser"
 )
 
 const PROMPT = ">> "
@@ -23,9 +24,30 @@ func Start(in io.Reader, out io.Writer) {
 
 		line := scanner.Text()
 		l := lexer.New(line)
+		p := parser.New(l)
 
-		for tok := l.NextToken(); tok.Type != token.EOF; tok = l.NextToken() {
-			fmt.Fprintf(out, "%+v\n", tok)
+		program := p.ParseProgram()
+
+		if len(p.Errors()) != 0 {
+			printParserErrors(out, p.Errors())
+			continue
 		}
+
+		evaluated := evaluator.Eval(program)
+
+		if evaluated != nil {
+			io.WriteString(out, evaluated.Inspect())
+			io.WriteString(out, "\n")
+		}
+	}
+}
+
+func printParserErrors(out io.Writer, errors []string) {
+	io.WriteString(out, "Something went wrong!!!\n")
+
+	io.WriteString(out, "Parser errors:\n")
+
+	for _, msg := range errors {
+		io.WriteString(out, "\t"+msg+"\n")
 	}
 }

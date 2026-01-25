@@ -1,5 +1,13 @@
 # Gloop programming language
 
+```
+  .-"""-.
+ /  ·  ·  \
+(    ~     )
+ `'-----'`
+   GLOOP
+```
+
 > Do not use in production. Like seriously. I mean you can... but I wouldnt. At least not yet.
 
 Gloop is a experiment in learning how interpreters, compilers and ultimately languages work.

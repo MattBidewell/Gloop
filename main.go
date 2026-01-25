@@ -8,6 +8,14 @@ import (
 	"github.com/mattbidewell/gloop/repl"
 )
 
+const logo = `
+  .-"""-.
+ /  ·  ·  \
+(    ~     )
+ ` + "`" + `'-----'` + "`" + `
+   GLOOP
+`
+
 func main() {
 	user, err := user.Current()
 
@@ -15,7 +23,8 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Printf("Hello %s!, This is the Gloop programming language!\n", user.Username)
+	fmt.Print(logo)
+	fmt.Printf("Hello %s! Welcome to the Gloop programming language!\n", user.Username)
 	repl.Start(os.Stdin, os.Stdout)
 
 }

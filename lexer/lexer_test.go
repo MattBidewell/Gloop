@@ -30,6 +30,8 @@ func TestNextToken(t *testing.T) {
 	"foo"
 
 	"bar foo"
+
+	[2,3]
 	`
 	tests := []struct {
 		expectedType    token.TokenType
@@ -107,6 +109,11 @@ func TestNextToken(t *testing.T) {
 		{token.INT, "9"},
 		{token.STRING, "foo"},
 		{token.STRING, "bar foo"},
+		{token.LBRACKET, "["},
+		{token.INT, "2"},
+		{token.COMMA, ","},
+		{token.INT, "3"},
+		{token.RBRACKET, "]"},
 		{token.EOF, ""},
 	}
 

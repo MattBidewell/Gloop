@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"github.com/mattbidewell/gloop/token"
+	"github.com/mattbidewell/gloop/lang/token"
 )
 
 /*

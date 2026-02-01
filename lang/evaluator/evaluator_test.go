@@ -3,9 +3,9 @@ package evaluator
 import (
 	"testing"
 
-	"github.com/mattbidewell/gloop/lexer"
-	"github.com/mattbidewell/gloop/object"
-	"github.com/mattbidewell/gloop/parser"
+	"github.com/mattbidewell/gloop/lang/lexer"
+	"github.com/mattbidewell/gloop/lang/object"
+	"github.com/mattbidewell/gloop/lang/parser"
 )
 
 func TestEvalIntegerExpression(t *testing.T) {

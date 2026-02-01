@@ -3,7 +3,7 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/mattbidewell/gloop/object"
+	"github.com/mattbidewell/gloop/lang/object"
 )
 
 var builtins = map[string]*object.BuiltIn{

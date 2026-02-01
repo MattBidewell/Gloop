@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/mattbidewell/gloop/repl"
+	"github.com/mattbidewell/gloop/lang/repl"
 )
 
 const logo = `

@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/mattbidewell/gloop/token"
+	"github.com/mattbidewell/gloop/lang/token"
 )
 
 func TestNextToken(t *testing.T) {

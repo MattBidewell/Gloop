@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/mattbidewell/gloop/ast"
-	"github.com/mattbidewell/gloop/lexer"
+	"github.com/mattbidewell/gloop/lang/ast"
+	"github.com/mattbidewell/gloop/lang/lexer"
 )
 
 func TestLetStatements(t *testing.T) {

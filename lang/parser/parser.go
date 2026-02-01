@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/mattbidewell/gloop/ast"
-	"github.com/mattbidewell/gloop/lexer"
-	"github.com/mattbidewell/gloop/token"
+	"github.com/mattbidewell/gloop/lang/ast"
+	"github.com/mattbidewell/gloop/lang/lexer"
+	"github.com/mattbidewell/gloop/lang/token"
 )
 
 type Parser struct {

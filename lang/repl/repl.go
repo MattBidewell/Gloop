@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/mattbidewell/gloop/evaluator"
-	"github.com/mattbidewell/gloop/lexer"
-	"github.com/mattbidewell/gloop/object"
-	"github.com/mattbidewell/gloop/parser"
+	"github.com/mattbidewell/gloop/lang/evaluator"
+	"github.com/mattbidewell/gloop/lang/lexer"
+	"github.com/mattbidewell/gloop/lang/object"
+	"github.com/mattbidewell/gloop/lang/parser"
 )
 
 const PROMPT = ">> "

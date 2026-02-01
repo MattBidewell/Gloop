@@ -6,7 +6,7 @@ import (
 	"hash/fnv"
 	"strings"
 
-	"github.com/mattbidewell/gloop/ast"
+	"github.com/mattbidewell/gloop/lang/ast"
 )
 
 type ObjectType string

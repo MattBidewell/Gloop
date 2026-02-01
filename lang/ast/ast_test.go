@@ -3,7 +3,7 @@ package ast
 import (
 	"testing"
 
-	"github.com/mattbidewell/gloop/token"
+	"github.com/mattbidewell/gloop/lang/token"
 )
 
 func TestString(t *testing.T) {

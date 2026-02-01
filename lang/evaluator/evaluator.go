@@ -3,8 +3,8 @@ package evaluator
 import (
 	"fmt"
 
-	"github.com/mattbidewell/gloop/ast"
-	"github.com/mattbidewell/gloop/object"
+	"github.com/mattbidewell/gloop/lang/ast"
+	"github.com/mattbidewell/gloop/lang/object"
 )
 
 var (

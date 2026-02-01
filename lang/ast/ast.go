@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/mattbidewell/gloop/token"
+	"github.com/mattbidewell/gloop/lang/token"
 )
 
 type Node interface {
